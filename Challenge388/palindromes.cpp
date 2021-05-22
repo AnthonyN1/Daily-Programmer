@@ -57,7 +57,9 @@ std::string Palindromes::nextPalindrome(const std::string &str){
 			for(unsigned int j = i + 1; j < str.size() - 1 - i; ++j)
 				nextPal[j] = '0';
 			
-			return std::string(nextPal);
+			std::string result(nextPal);
+			delete[] nextPal;
+			return result;
 		}
 	}
 
@@ -68,7 +70,9 @@ std::string Palindromes::nextPalindrome(const std::string &str){
 		nextPal[middle] = str[middle] + 1;
 	}
 
-	return std::string(nextPal);
+	std::string result(nextPal);
+	delete[] nextPal;
+	return result;
 }
 
 
