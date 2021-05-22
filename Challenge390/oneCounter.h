@@ -13,6 +13,10 @@
 	- Duplicate of Challenge #45
 */
 
+#ifndef _oneCounter_h_
+#define _oneCounter_h_
+
+
 class OneCounter{
 	public:
 		typedef unsigned long long ULL;
@@ -23,3 +27,6 @@ class OneCounter{
 		static ULL power(ULL a, ULL b);
 		static ULL numOnesNineNumber(ULL nnSize);
 };
+
+
+#endif
